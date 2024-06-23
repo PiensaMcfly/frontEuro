@@ -17,8 +17,9 @@
   <div id="viewport">
   <!-- Sidebar -->
   <div id="sidebar">
+    <img src="Public/logoEurto.jpeg" alt="logoEuro" width="100%">
     <header>
-      <a href="#">ADM EuroSport</a>
+      <a href="#">Panel de Admin</a>
     </header>
     <ul class="nav">
       <li>
@@ -57,6 +58,7 @@
         </a>
       </li>
     </ul>
+    
   </div>
   <!-- Content -->
   <div id="content">
@@ -76,7 +78,12 @@
       <h1>Ultimos Clientes</h1>
       <p>
        Ingresa los Datos del Auto o Cliente
-        <code>#content</code>.
+        <code>---</code>.
+
+        <button type="button" class="btn btn-primary btn-lg">Nueva Cotizacion</button>
+        <button type="button" class="btn btn-secondary btn-lg">Nuevo Cliente</button>
+
+
         <!-- TABLA DE ULTIMOS CLIENTES  -->
          <!-- Container -->
 <div class="container">
@@ -84,54 +91,78 @@
   <!-- Main Content-->
   <div class="masthead">
     
-<input type="text" id="buscar" onkeyup="buscar()" placeholder="Buscar en tabla" title="Empieza a escribir para buscar">
+<input type="text" id="buscar" onkeyup="buscar()" placeholder="Ingresa Numero Vin" title="Empieza a escribir para buscar">
     
     <div class="table-responsive">
       <table class="table" id="tabla" data-sort="table">
         <thead>
           <tr>
-            <th>Item</th>
-            <th>Name</th>
+            <th>N° VIN</th>
+            <th>Nombre</th>
             <th>Description</th>
-            <th>Date</th>
-            <th>Price</th>
+            <th>Fecha</th>
+            <th>Email</th>
+            <th>Cotizacion</th>
+            <th>Estado</th>
+            <th>Modificar</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope=row>1</th>
-            <td>First Last</td>
-            <td>Two Items</td>
+            <td>Cliente1</td>
+            <td>Service</td>
             <td>01/01/2015</td>
             <td>$200</td>
+            <td>$200</td>
+            <td>Pendiente</td>
+            <td>
+            <a href="">Modificar - <a href="">Eliminar</a></a></td>
+            
           </tr>
           <tr>
             <th scope=row>2</th>
-            <td>Firstname Lastname</td>
-            <td>One Item</td>
+            <td>Cliente2</td>
+            <td>Cambio Aceite</td>
             <td>06/01/2015</td>
             <td>$100</td>
+            <td>$200</td>
+            <td>Pendiente</td>
+            <td>
+            <a href="">Modificar - <a href="">Eliminar</a></a></td>
           </tr>
           <tr>
             <th scope=row>3</th>
-            <td>Name Another</td>
-            <td>One Item</td>
+            <td>Cliente3</td>
+            <td>Cambio Filtro</td>
             <td>12/15/2014</td>
             <td>$100</td>
+            <td>$200</td>
+            <td>Pendiente</td>
+            <td>
+            <a href="">Modificar - <a href="">Eliminar</a></a></td>
           </tr>
           <tr>
             <th scope=row>4</th>
-            <td>One More</td>
-            <td>Three Items</td>
+            <td>Cliente 4</td>
+            <td>Caja de Cambios</td>
             <td>01/20/2016</td>
             <td>$300</td>
+            <td>$200</td>
+            <td>Pendiente</td>
+            <td>
+            <a href="">Modificar - <a href="">Eliminar</a></a></td>
           </tr>
           <tr>
             <th scope=row>5</th>
-            <td>Name Right Here</td>
-            <td>Two Items</td>
+            <td>Cliente 5</td>
+            <td>Patas de motors</td>
             <td>01/20/2016</td>
             <td>$200</td>
+            <td>$200</td>
+            <td>Pendiente</td>
+            <td>
+            <a href="">Modificar - <a href="">Eliminar</a></a></td>
           </tr>
         </tbody>
       </table>
